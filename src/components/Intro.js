@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {motion} from 'framer-motion'
-import Me from "../assets/Images/roughportrait.png";
+import Me from "../assets/Images/path2046.png";
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -41,7 +41,7 @@ const SubBox = styled.div`
 
   .pic {
     position: absolute;
-    bottom: -20%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
