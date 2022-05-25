@@ -6,7 +6,7 @@ import { Design, Develope } from "./AllSvgs";
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
-import ParticleComponent from "../subComponents/ParticleComponent";
+import ParticlesBg from 'particles-bg'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -16,6 +16,7 @@ const Box = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 0;
 `;
 
 const Main = styled.div`
@@ -81,13 +82,15 @@ const Description = styled.div`
 
 const MySkillsPage = () => {
   return (
+    <div>
+    
     <ThemeProvider theme={lightTheme}>
+    
       <Box>
-
       <LogoComponent theme='light'/>
       <SocialIcons theme='light'/>
       <PowerButton />
-      <ParticleComponent />
+      <ParticlesBg color="black" type="cobweb" bg={true} />
         <Main>
           <Title>
             <Design width={40} height={40} /> Designer
@@ -132,6 +135,7 @@ const MySkillsPage = () => {
         </Main>
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 

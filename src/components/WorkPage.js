@@ -1,9 +1,11 @@
 import React from 'react'
+import ParticlesBg from 'particles-bg'
+
 
 const WorkPage = () => {
   return (
     <div>
-      WorkPage Component/Page
+      <ParticlesBg type="circle" bg={true} />
     </div>
   )
 }
