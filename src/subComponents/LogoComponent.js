@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { lightTheme, darkTheme } from '../components/Themes'
+import Name from '../assets/Images/PJ_logo.png'
 
-const Logo = styled.h1`
-display: inline-block;
+const Logo = styled.div`
+display: flex;
 color: #534582;
-font-family: 'Helvetica Neue',sans-serif;
+${'' /* font-family: 'Nasir Udin', serif; */}
 
+height: 5rem;
 position: fixed;
-left: 2rem;
-top: 2rem;
+left: .5rem;
+top: 1rem;
 z-index: 3;
 
 `
@@ -17,7 +19,7 @@ z-index: 3;
 const LogoComponent = (props) => {
   return (
     <Logo color={props.theme}>
-      PJ
+      <img src={Name} />
     </Logo>
 
   )

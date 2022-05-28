@@ -91,7 +91,7 @@ const AboutPage = () => {
             Some stuff
           </Main>
 
-          <BigTitle text="ABOUT" top="10%" left="5%" />
+          <BigTitle text="ABOUT" top="0%" left="5%" />
         </Box>
       </ThemeProvider>
     </div>
