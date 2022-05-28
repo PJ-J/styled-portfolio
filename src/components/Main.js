@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
-import PowerButton from "../subComponents/PowerButton";
+// ';;'/......'
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import Intro from "./Intro";
@@ -135,9 +135,6 @@ const Main = () => {
     <MainContainer>
       <DarkDiv click={click} />
       <Container>
-        <Link to="main" spy={true} smooth={true} offset={0} duration={500}>
-        <PowerButton />
-        </Link>
         <LogoComponent theme={click ? "dark" : "light"} />
         <SocialIcons theme={click ? "dark" : "light"} />
 

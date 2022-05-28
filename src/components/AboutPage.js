@@ -4,7 +4,7 @@ import { darkTheme } from "./Themes";
 import styled from "styled-components";
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
-import PowerButton from "../subComponents/PowerButton";
+// import PowerButton from "../subComponents/PowerButton";
 import ParticlesBg from "particles-bg";
 import BigTitle from "../subComponents/BigTitle";
 import astronaut from "../assets/Images/spaceman.png";
@@ -74,7 +74,7 @@ const AboutPage = () => {
         <Box>
           <LogoComponent theme="dark" />
           <SocialIcons theme="dark" />
-          <PowerButton />
+          
           <ParticlesBg color="black" type="lines" bg={true} />
 
           <Spaceman>

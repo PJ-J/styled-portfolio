@@ -90,7 +90,7 @@ const MySkillsPage = () => {
       <Box>
       <LogoComponent theme='light'/>
       <SocialIcons theme='light'/>
-      <PowerButton />
+      
       <ParticlesBg color="black" type="cobweb" bg={true} />
         <Main>
           <Title>
