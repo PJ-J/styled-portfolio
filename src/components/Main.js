@@ -7,6 +7,7 @@ import SocialIcons from "../subComponents/SocialIcons";
 import Intro from "./Intro";
 import { YinYang } from "./AllSvgs";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -134,7 +135,9 @@ const Main = () => {
     <MainContainer>
       <DarkDiv click={click} />
       <Container>
+        <Link to="main" spy={true} smooth={true} offset={0} duration={500}>
         <PowerButton />
+        </Link>
         <LogoComponent theme={click ? "dark" : "light"} />
         <SocialIcons theme={click ? "dark" : "light"} />
 
@@ -167,7 +170,7 @@ const Main = () => {
             Say hi..
           </motion.h2>
         </Contact>
-        <BLOG to="/blog">
+        {/* <BLOG to="/blog">
           <motion.h2
             initial={{
               y: -200,
@@ -226,7 +229,7 @@ const Main = () => {
               My Skills
             </motion.h2>
           </SKILLS>
-        </BottomBar>
+        </BottomBar> */}
       </Container>
       {click ? <Intro click={click} /> : null}
     </MainContainer>

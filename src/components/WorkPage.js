@@ -14,14 +14,14 @@ import BigTitle from '../subComponents/BigTitle';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
-height:400vh;
+height:100vh;
 position: relative;
 display: flex;
 align-items: center;
 `
 
 const Main = styled(motion.ul)`
-position: fixed;
+position: absolute;
 top: 12rem;
 left:calc(10rem + 15vw);
 height: 40vh;
@@ -56,30 +56,30 @@ const container = {
 
 const WorkPage = () => {
 
-    const ref = useRef(null);
-    const yinyang = useRef(null);
+    // const ref = useRef(null);
+    // const yinyang = useRef(null);
 
 
 
-    useEffect(() => {
-        let element = ref.current;
+    // useEffect(() => {
+    //     let element = ref.current;
        
         
-        const rotate = () => {
+    //     const rotate = () => {
          
-         element.style.transform = `translateX(${-window.pageYOffset}px)`
+    //      element.style.transform = `translateX(${-window.pageYOffset}px)`
       
          
-          return (yinyang.current.style.transform =
-            'rotate(' + -window.pageYOffset + 'deg)')
-        }
+    //       return (yinyang.current.style.transform =
+    //         'rotate(' + -window.pageYOffset + 'deg)')
+    //     }
     
-        window.addEventListener('scroll', rotate)
-        return () => {
-          window.removeEventListener('scroll', rotate);
+    //     window.addEventListener('scroll', rotate)
+    //     return () => {
+    //       window.removeEventListener('scroll', rotate);
           
-        }
-      }, [])
+    //     }
+    //   }, [])
 
 
     return (
@@ -90,18 +90,18 @@ const WorkPage = () => {
 <SocialIcons theme='dark'/>
 <PowerButton />
 
-     <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
+     <Main   variants={container} initial='hidden' animate='show'  >
          {
             Work.map( d => 
             <Card key={d.id} data={d} />
             )
          }
      </Main>
-<Rotate ref={yinyang}>
+{/* <Rotate ref={yinyang}>
     <YinYang width={80} height={80} fill={darkTheme.text} />
-</Rotate>
+</Rotate> */}
 
-<BigTitle text="WORK" top='10%' right="20%" />
+<BigTitle text="WORK" top='80%' right="20%" />
         </Box>
 
         </ThemeProvider>

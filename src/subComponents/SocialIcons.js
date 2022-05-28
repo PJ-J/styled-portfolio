@@ -24,8 +24,9 @@ const Icons = styled.div`
 const Line = styled(motion.span)`
   width: 2px;
   height: 8rem;
-  background-color: ${(props) =>
-    props.color === "dark" ? darkTheme.text : darkTheme.body};
+  {'' /* background-color: ${(props) =>
+    props.color === "dark" ? darkTheme.text : darkTheme.body}; */}
+  background-color: #534582;
 `;
 
 const SocialIcons = (props) => {
@@ -44,7 +45,8 @@ const SocialIcons = (props) => {
           <Github
             width={25}
             height={25}
-            fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
+            // fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
+            fill='#534582'
           />
         </NavLink>
       </motion.div>

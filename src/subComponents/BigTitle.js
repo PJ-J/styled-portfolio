@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const Text = styled.h1`
-position: fixed;
+position: absolute;
 top: ${props => props.top};
 left: ${props => props.left};
 right: ${props => props.right};
