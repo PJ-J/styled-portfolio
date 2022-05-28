@@ -30,6 +30,12 @@ function App() {
       <Route exact path="/work" component={WorkPage} />
       <Route exact path="/skills" component={MySkillsPage} />
     </Switch>
+    {/* <div>
+      <Main />
+      <AboutPage />
+      <MySkillsPage />
+      <WorkPage />
+    </div> */}
     </AnimatePresence>
     
     </ThemeProvider>
